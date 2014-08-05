@@ -20,7 +20,7 @@
     "nib": "^1.0.3",
     "JSONPath": "^0.10.0",
     "node-sha1": "0.0.1",
-    "cache-middleware": "0.0.1",
+    "cache-middleware": "0.0.2",
     "moment": "^2.8.1",
     "moment-timezone": "^0.2.1"
   }

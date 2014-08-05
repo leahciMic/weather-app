@@ -28,7 +28,7 @@ app.use(stylus.middleware({
 app.use(express.static(__dirname + '/public'));
 
 var forecast = new Forecast({
-  APIKey: 'c271607d25dddb23747dbb6ffe18b694',
+  APIKey: process.env.FORECAST_API_KEY,
   timeout: 10000
 });
 
