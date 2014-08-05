@@ -1,0 +1,26 @@
+doctype
+
+title #{geocode.name} weather, time, and warnings
+
+h1=geocode.name
+
+table(border="1")
+  tr
+    td Currently
+    td
+      =weather.currently.temperature
+      |°F
+
+      if weather.currently.apparentTemperature != weather.currently.temperature
+        span (feels like #{weather.currently.apparentTemperature}°F)
+      |  and #{weather.currently.summary}
+
+  tr
+    td Wind
+    td
+      | #{weather.currently.windSpeed}MPH #{weather.currently.windBearing}°
+
+  tr
+    td Current Time
+    td
+      | #{moment().tz(weather.timezone).format('DD-MM-YYYY HH:mm:ss z')} (#{weather.timezone}) #{weather.offset}

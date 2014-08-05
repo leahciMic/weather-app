@@ -1,0 +1,27 @@
+{
+  "name": "weather",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.2.2",
+    "lodash": "^2.4.1",
+    "express": "^4.7.2",
+    "forecast.io": "0.0.9",
+    "geocoder": "^0.2.0",
+    "redis": "^0.11.0",
+    "jade": "^1.5.0",
+    "stylus": "^0.47.3",
+    "nib": "^1.0.3",
+    "JSONPath": "^0.10.0",
+    "node-sha1": "0.0.1",
+    "cache-middleware": "0.0.1",
+    "moment": "^2.8.1",
+    "moment-timezone": "^0.2.1"
+  }
+}
