@@ -3,7 +3,8 @@ var express = require('express'),
     Promise = require('bluebird'),
     fs = Promise.promisifyAll(require('fs')),
     path = require('path'),
-    ROUTES_DIR = __dirname + '/routes/';
+    ROUTES_DIR = __dirname + '/routes/',
+    PORT = process.env.PORT || 3000;
 
 var routeFiles = fs.readdirAsync(ROUTES_DIR);
 
@@ -37,4 +38,4 @@ routeFiles.then(function(routeFiles) {
     });
 });
 
-app.listen(3000);
+app.listen(PORT);
